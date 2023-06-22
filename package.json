@@ -1,0 +1,52 @@
+{
+  "name": "evcc",
+  "description": "",
+  "author": "naltatis & andig",
+  "scripts": {
+    "build": "vite build",
+    "test": "",
+    "lint": "prettier assets './**/*.{yml,yaml,toml}' --write && eslint assets/**/*.js assets/**/*.vue --fix",
+    "dev": "vite",
+    "histoire": "histoire dev"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@babel/core": "^7.17.2",
+    "@h2d2/shopicons": "^1.2.0",
+    "@histoire/plugin-vue": "^0.11.6",
+    "@popperjs/core": "^2.11.5",
+    "@vitejs/plugin-vue": "^3.0.1",
+    "@vue/compiler-sfc": "^3.2.30",
+    "axios": "^1.2.1",
+    "bootstrap": "^5.2.2",
+    "canvas-confetti": "^1.4.0",
+    "countup.js": "^2.3.2",
+    "eslint": "^8.27.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-vue": "^9.3.0",
+    "histoire": "^0.11.6",
+    "markty-toml": "^0.1.1",
+    "prettier": "^2.5.1",
+    "prettier-plugin-toml": "^0.3.1",
+    "rollup-plugin-visualizer": "^5.8.3",
+    "smoothscroll-polyfill": "^0.4.4",
+    "vite": "^3.2.5",
+    "vite-plugin-toml": "^0.5.0",
+    "vue": "^3.2.29",
+    "vue-eslint-parser": "^9.1.0",
+    "vue-hot-reload-api": "^2.3.4",
+    "vue-i18n": "^9.2.2",
+    "vue-meta": "^3.0.0-alpha.2",
+    "vue-router": "^4.0.12"
+  },
+  "engines": {
+    "npm": ">=8.0.0",
+    "node": ">=18.0.0"
+  },
+  "license": "MIT",
+  "repository": "github:evcc-io/evcc"
+}

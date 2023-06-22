@@ -1,0 +1,31 @@
+template: eastron
+products:
+  - brand: Eastron
+    description:
+      generic: SDM 630
+  - brand: Eastron
+    description:
+      generic: SDM 72v2
+params:
+  - name: usage
+    choice: ["grid", "pv", "battery", "charge"]
+  - name: modbus
+    choice: ["rs485"]
+render: |
+  type: modbus
+  {{- include "modbus" . }}
+  model: sdm
+  power: Power
+  energy: Sum
+  currents:
+    - CurrentL1
+    - CurrentL2
+    - CurrentL3
+  voltages:
+    - VoltageL1
+    - VoltageL2
+    - VoltageL3
+  powers:
+    - PowerL1
+    - PowerL2
+    - PowerL3

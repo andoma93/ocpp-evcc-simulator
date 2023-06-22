@@ -1,0 +1,11 @@
+template: pmcp
+products:
+  - brand: Porsche
+    description:
+      generic: Mobile Charger Plus
+requirements:
+  evcc: ["eebus"]
+params:
+  - preset: eebusmeter
+render: |
+  {{ include "eebus-meter" . }}

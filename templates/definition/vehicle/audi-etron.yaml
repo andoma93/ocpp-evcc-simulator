@@ -1,0 +1,14 @@
+template: etron
+products:
+  - brand: Audi
+    description:
+      generic: e-tron
+params:
+  - preset: vehiclebase
+  - preset: vehicleidentify
+  - name: vin
+    example: WAUZZZ...
+render: |
+  type: etron
+  {{ include "vehicle-base" . }}
+  {{ include "vehicle-identify" . }}

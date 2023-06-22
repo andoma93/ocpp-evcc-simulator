@@ -1,0 +1,12 @@
+template: enyaq
+products:
+  - brand: Skoda
+    description:
+      generic: Enyaq
+params:
+  - preset: vehiclebase
+  - preset: vehicleidentify
+render: |
+  type: enyaq
+  {{ include "vehicle-base" . }}
+  {{ include "vehicle-identify" . }}

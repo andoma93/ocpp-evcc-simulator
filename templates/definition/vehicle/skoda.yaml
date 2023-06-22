@@ -1,0 +1,13 @@
+template: skoda
+products:
+  - brand: Skoda
+    description:
+      de: Andere
+      en: Others
+params:
+  - preset: vehiclebase
+  - preset: vehicleidentify
+render: |
+  type: skoda
+  {{ include "vehicle-base" . }}
+  {{ include "vehicle-identify" . }}

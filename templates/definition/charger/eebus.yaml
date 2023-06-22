@@ -1,0 +1,13 @@
+template: eebus
+products:
+  - description:
+      de: EEBUS kompatible Wallbox
+      en: EEBUS compatible Wallbox
+group: generic
+capabilities: ["mA"]
+requirements:
+  evcc: ["eebus"]
+params:
+  - preset: eebusmeter
+render: |
+  {{ include "eebus-meter" . }}

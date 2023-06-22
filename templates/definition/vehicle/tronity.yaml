@@ -1,0 +1,41 @@
+template: tronity
+products:
+  - description:
+      generic: Tronity
+group: generic
+requirements:
+  evcc: ["sponsorship"]
+params:
+  - name: title
+  - name: user
+    required: true
+  - name: password
+    required: true
+  - name: vin
+    example: W...
+  - name: capacity
+    default: 10
+  - name: phases
+    advanced: true
+  - name: icon
+    default: car
+    advanced: true
+  - preset: vehicleidentify
+render: |
+  type: tronity
+  {{- if ne .title "" }}
+  title: {{ .title }}
+  {{- end }}
+  {{- if ne .icon "" }}
+  icon: {{ .icon }}
+  {{- end }}
+  credentials:
+    id: {{ .user }}
+    secret: {{ .password }}
+  capacity: {{ .capacity }}
+  {{- if ne .phases "" }}
+  phases: {{ .phases }}
+  {{- end }}
+  {{- if ne .vin "" }}
+  vin: {{ .vin }}
+  {{- end }}

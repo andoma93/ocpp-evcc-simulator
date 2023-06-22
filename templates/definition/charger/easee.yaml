@@ -1,0 +1,22 @@
+template: easee
+products:
+  - brand: Easee
+    description:
+      generic: Home
+capabilities: ["1p3p", "rfid"]
+requirements:
+  evcc: ["sponsorship"]
+params:
+  - name: user
+    required: true
+  - name: password
+    required: true
+    mask: true
+  - name: charger
+    required: true
+    example: EH______
+render: |
+  type: easee
+  user: {{ .user }}
+  password: {{ .password }}
+  charger: {{ .charger }}

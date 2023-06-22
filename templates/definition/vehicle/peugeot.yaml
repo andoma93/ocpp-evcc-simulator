@@ -1,0 +1,10 @@
+template: peugeot
+products:
+  - brand: Peugeot
+params:
+  - preset: vehiclebase
+  - preset: vehicleidentify
+render: |
+  type: peugeot
+  {{ include "vehicle-base" . }}
+  {{ include "vehicle-identify" . }}

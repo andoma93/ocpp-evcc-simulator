@@ -1,0 +1,10 @@
+template: porsche
+products:
+  - brand: Porsche
+params:
+  - preset: vehiclebase
+  - preset: vehicleidentify
+render: |
+  type: porsche
+  {{ include "vehicle-base" . }}
+  {{ include "vehicle-identify" . }}

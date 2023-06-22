@@ -1,0 +1,10 @@
+template: ds
+products:
+  - brand: DS
+params:
+  - preset: vehiclebase
+  - preset: vehicleidentify
+render: |
+  type: ds
+  {{ include "vehicle-base" . }}
+  {{ include "vehicle-identify" . }}

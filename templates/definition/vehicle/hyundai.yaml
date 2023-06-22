@@ -1,0 +1,14 @@
+template: hyundai
+products:
+  - brand: Hyundai
+    description:
+      generic: Bluelink
+params:
+  - preset: vehiclebase
+  - preset: vehiclelanguage
+  - preset: vehicleidentify
+render: |
+  type: hyundai
+  {{ include "vehicle-base" . }}
+  {{ include "vehicle-language" . }}
+  {{ include "vehicle-identify" . }}

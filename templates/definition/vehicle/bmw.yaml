@@ -1,0 +1,12 @@
+template: bmw
+products:
+  - brand: BMW
+params:
+  - preset: vehiclebase
+  - preset: vehicleidentify
+  - name: vin
+    example: WBMW...
+render: |
+  type: bmw
+  {{ include "vehicle-base" . }}
+  {{ include "vehicle-identify" . }}
